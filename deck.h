@@ -12,9 +12,9 @@
 typedef enum kind_e
 {
 	SPADE = 0,
-	HEART = 0,
-	CLUB = 0,
-	DIAMOND = 0,
+	HEART,
+	CLUB,
+	DIAMOND
 } kind_t;
 
 /**
