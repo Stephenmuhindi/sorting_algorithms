@@ -1,11 +1,11 @@
 #include "deck.h"
 
 /**
- * swap - Swaps two nodes.
- * @a: first node address.
- * @b: second node address.
- * Return: void.
- */
+*swap - swaps 2 nodes
+*@a: &first node
+*@b: &second node
+*Return: void
+*/
 void swap(deck_node_t *a, deck_node_t *b)
 {
 	if (a->prev)
@@ -19,9 +19,9 @@ void swap(deck_node_t *a, deck_node_t *b)
 }
 
 /**
- * insertion_sort_list - Performs an insertion sort
- * @list: Address of head pointer.
- * Return: void.
+ * insertion_sort_list - insertion sort.
+ * @list: &head
+ * Return: void
  */
 void insertion_sort_list(deck_node_t **list)
 {
@@ -50,21 +50,21 @@ void insertion_sort_list(deck_node_t **list)
 }
 
 /**
- * sort_deck - Sorts deck by given sort function.
- * @deck: Address to the pointer of the head node.
- * Return: void
- */
+* sort_deck - sorts using given sort function
+* @deck: &head
+*
+*/
 void sort_deck(deck_node_t **deck)
 {
 	insertion_sort_list(deck);
 }
 
 /**
- * less_than - Determines comparison of two cards.
- * @a: Pointer to first card.
- * @b: Pointer to second card.
- * Return: 1 if a is greater than b, 0 otherwise.
- */
+* less_than - determines comparison two cards
+* @a: *first card
+* @b: *second card
+* Return: true or false
+*/
 int less_than(const card_t *a, const card_t *b)
 {
 	char *s1, *s2, *values[] = {"King", "Queen", "Jack", "10", "9", "8",
