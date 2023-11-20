@@ -35,5 +35,9 @@ int min_swap(listint_t **current, listint_t **previous,
 		listint_t **head, listint_t **tail);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
+void merge_sort(int *array, size_t size);
+void merge_compare(int *array, size_t start, size_t stop, int *new);
+void merge_sort_top_down(int *array, size_t start, size_t stop, int *new);
+void merge_sort(int *array, size_t size);
 
 #endif
