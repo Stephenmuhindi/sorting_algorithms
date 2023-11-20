@@ -45,5 +45,8 @@ void heap_sort(int *array, size_t size);
 int getMax(int *array, size_t size);
 void countingSort(int *arr, size_t n, int place);
 void radix_sort(int *array, size_t size);
+size_t partition(int **array, size_t low, size_t high, size_t size);
+void qS(int **array, size_t low, size_t high, size_t size);
+void quick_sort_hoare(int *array, size_t size);
 
 #endif
