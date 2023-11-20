@@ -4,17 +4,17 @@
 #include <stdio.h>
 /**
  * enum kind_e - struct def
- * @SPADE - enum
- * @HEART - enum
- * @CLUB - enum
- * @DIAMOND - enum
+ * @SPADE: enum
+ * @HEART: enum
+ * @CLUB: enum
+ * @DIAMOND: enum
  */
 typedef enum kind_e
 {
 	SPADE = 0,
-	HEART,
-	CLUB,
-	DIAMOND
+	HEART = 0,
+	CLUB = 0,
+	DIAMOND = 0,
 } kind_t;
 
 /**
