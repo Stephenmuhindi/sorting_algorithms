@@ -34,5 +34,6 @@ int max_swap(listint_t **current, listint_t **previous,
 int min_swap(listint_t **current, listint_t **previous,
 		listint_t **head, listint_t **tail);
 void cocktail_sort_list(listint_t **list);
+void counting_sort(int *array, size_t size);
 
 #endif
