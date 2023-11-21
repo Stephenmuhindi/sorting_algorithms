@@ -33,6 +33,7 @@ void bitonic_compare(int up, int *array, size_t start, size_t end)
 	for (i = start; i < start + half; i++)
 	{
 		int shouldSwap = (array[i] > array[i + half]) == up;
+
 		if (shouldSwap)
 			swap_values(&array[i], &array[i + half]);
 	}
